@@ -5,11 +5,16 @@
 # Challenge 1
 # Use the each method to print out a complete sentence stating the weather using the Array below:
 
-# This sentence will say: "In the Summer, it's sunny, and in the Winter it's freezing, but my favorite days are the ones where it's partly cloudy and drizzly."
+# This sentence will say: 
+# In the Summer, it's sunny,
+# and in the snowy Winter, it's
+# freezing, but I love days where it's both
+# partly cloudy and
+# drizzly.
 weather_options = ["sunny", "snowy", "freezing", "partly cloudy", "drizzly"]
 weather_options.each do |weather_option|
   if weather_option == "sunny"
-    p ("In the Summer, it's #{weather_option}, ")
+    puts "In the Summer, it's #{weather_option}, "
   elsif weather_option == "snowy"
     puts "and in the #{weather_option} Winter, it's "
   elsif weather_option == "freezing"
@@ -20,12 +25,15 @@ weather_options.each do |weather_option|
     puts "#{weather_option}."
   end
 end
-=begin
-In the Summer, it's #{sunny}, and in the Winter, it's #{freezing},  
 
 # Challenge 2
 # Use the each method to print out the words that are exactly 3 characters in length
 words = ["car", "bike", "bus", "van", "scooter", "truck", "rv"]
 
+words.each do |word|
+  if word.length == 3
+    puts "#{word}"
+  end
+end
+
 # Record yourself live-coding and talking through either Challenge 1 or 2. The recording doesn't have to be the first time you are solving the problem. Use technical vocabulary and explain each part to demonstrate your understanding! Share the link to your video in your small group channel.
-=end
